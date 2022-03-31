@@ -1,7 +1,14 @@
-body {
-    background-color: blanchedalmond;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+html, body, * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #59735C;
+    height: 15rem;
 }
-h3 {
-    font-size: 4rem;
+h1 {
+    font-family: 'Arapey';
+    font-style: normal;
+    font-size: 13rem;
+    color: #BCB681;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
