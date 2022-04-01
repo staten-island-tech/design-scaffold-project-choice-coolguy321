@@ -2,4 +2,47 @@ html, body, * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background: #59735C;
+}
+
+.article {
+    text-align: left;
+    padding: 2rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.25rem;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #2E402D;
+}
+
+li {
+    float: left;
+}
+  
+li a {
+    background-color: #2E402D;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 2rem 3.5rem;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: rgb(5, 29, 17);
+}
+
+a {
+    font-size: 2rem;
 }
