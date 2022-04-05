@@ -10,12 +10,20 @@ html, body, * {
     padding: 2rem;
 }
 
+.article-link:hover {
+    color: rgb(7, 34, 7);
+}
+
+.article-link {
+    font-size: 1.5rem;
+}
+
 h3 {
-    font-size: 2rem;
+    font-size: 2.25rem;
 }
 
 h4 {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
 }
 
 ul {
@@ -46,3 +54,4 @@ li a:hover {
 a {
     font-size: 2rem;
 }
+
