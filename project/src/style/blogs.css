@@ -6,12 +6,31 @@ html, body, * {
 }
 
 .article {
-    text-align: left;
-    padding: 2rem;
+    display: grid;
+}
+
+.card {
+    text-align: center;
+    padding: 4rem;
+    box-shadow: 0 2rem 2rem 0 rgba(0, 0, 0, 0.7);
+    border-radius: 2.2rem;
+    margin: 2.5rem 2.5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    flex: 0 1 22%;
+}
+
+.article-link:visited {
+    color: rgb(58, 15, 68);
+}
+
+
+.article-link:active {
+    color: rgb(109, 64, 119);
 }
 
 .article-link:hover {
-    color: rgb(7, 34, 7);
+    color: rgb(2, 3, 2);
 }
 
 .article-link {

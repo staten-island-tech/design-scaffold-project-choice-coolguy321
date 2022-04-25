@@ -13,10 +13,12 @@
         <ul class="articles">
             {%- for post in collections.post -%}
                 <article class="article">
-                    <div class="article-text">
+                    <div class="card">
+                        <div class="article-text">
                         <h3 class="article-title">{{post.data.title}}</h3>
                         <h4 class="article-author">{{post.data.author}}</h4>
                         <a class="article-link" href="{{ post.url }}">{{post.data.url}}</a></a>
+                        </div>
                     </div>
                 </article>
             {%- endfor -%}
