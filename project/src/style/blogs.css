@@ -7,17 +7,17 @@ html, body, * {
 
 .article {
     display: grid;
+    grid-template-columns: 3;
+    grid-auto-rows: 3;
+    grid-gap: 2rem;   
 }
 
 .card {
     text-align: center;
-    padding: 4rem;
-    box-shadow: 0 2rem 2rem 0 rgba(0, 0, 0, 0.7);
-    border-radius: 2.2rem;
-    margin: 2.5rem 2.5rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    flex: 0 1 22%;
+    box-shadow: 0 1rem 1rem 0 rgba(0, 0, 0, 0.7);
+    border-radius: 2rem;
+    padding: 1.5rem;
+    width: 33%;
 }
 
 .article-link:visited {
@@ -35,6 +35,7 @@ html, body, * {
 
 .article-link {
     font-size: 1.5rem;
+    color: aliceblue;
 }
 
 h3 {
