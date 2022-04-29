@@ -6,18 +6,11 @@ html, body, * {
 }
 
 .article {
-    display: grid;
-    grid-template-columns: 3;
-    grid-auto-rows: 3;
-    grid-gap: 2rem;   
+    display: flex;
 }
 
 .card {
     text-align: center;
-    box-shadow: 0 1rem 1rem 0 rgba(0, 0, 0, 0.7);
-    border-radius: 2rem;
-    padding: 1.5rem;
-    width: 33%;
 }
 
 .article-link:visited {
