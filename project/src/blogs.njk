@@ -12,15 +12,16 @@
     <section class="section-container">
         <ul class="articles">
             {%- for post in collections.post -%}
-                <article class="article">
+                <article class="article-container">
                     <div class="card">
                         <div class="article-text">
                         <h3 class="article-title">{{post.data.title}}</h3>
                         <h4 class="article-author">{{post.data.author}}</h4>
+                        <img src= "{{ post.data.image }}" alt="" class="img-preview">
                         <a class="article-link" href="{{ post.url }}">{{post.data.url}}</a></a>
                         </div>
-                        <img src="{{ post.data.image "}} alt="" class="img-preview">
                     </div>
+                    
                 </article>
             {%- endfor -%}
         </ul>

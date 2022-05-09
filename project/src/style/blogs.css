@@ -5,12 +5,27 @@ html, body, * {
     background: #59735C;
 }
 
-.article {
+.article-container {
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
 }
+
 
 .card {
     text-align: center;
+    padding: 8%;
+    margin-bottom: 3%;
+    margin-top: 10%;
+    margin-left: 8%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 33%;
+    height: 30rem;
+}
+
+.article-text {
+    font-size: 4rem;
 }
 
 .article-link:visited {
@@ -68,3 +83,7 @@ a {
     font-size: 2rem;
 }
 
+img {
+    width: 8rem;
+    height: 8rem;
+}
