@@ -1,89 +1,17 @@
 html, body, * {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
-    background: #59735C;
+    background: #ffffff;
 }
 
-.article-container {
+nav {
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: rgb(191, 224, 198);
+    font-family: 'Nanum Gothic', sans-serif;
 }
 
 
-.card {
-    text-align: center;
-    padding: 8%;
-    margin-bottom: 3%;
-    margin-top: 10%;
-    margin-left: 8%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    width: 33%;
-    height: 30rem;
-}
-
-.article-text {
-    font-size: 4rem;
-}
-
-.article-link:visited {
-    color: rgb(58, 15, 68);
-}
-
-
-.article-link:active {
-    color: rgb(109, 64, 119);
-}
-
-.article-link:hover {
-    color: rgb(2, 3, 2);
-}
-
-.article-link {
-    font-size: 1.5rem;
-    color: aliceblue;
-}
-
-h3 {
-    font-size: 2.25rem;
-}
-
-h4 {
-    font-size: 1.5rem;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #2E402D;
-}
-
-li {
-    float: left;
-}
-  
-li a {
-    background-color: #2E402D;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 2rem 3.5rem;
-    text-decoration: none;
-}
-
-li a:hover {
-    background-color: rgb(5, 29, 17);
-}
-
-a {
-    font-size: 2rem;
-}
-
-img {
-    width: 8rem;
-    height: 8rem;
-}
