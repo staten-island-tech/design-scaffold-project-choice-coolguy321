@@ -6,7 +6,7 @@ body,
   box-sizing: border-box;
 }
 
-nav {
+.nav-bar {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -34,11 +34,51 @@ nav {
   color: rgb(228, 228, 228);
   text-decoration: none;
   letter-spacing: 1.5px;
+  display: block;
 }
 
 .nav-links a:hover {
   color: rgb(46, 46, 46);
 }
 
-.section-container {
+.toggle-button {
+  position: absolute;
+  top: 1.7rem;
+  right: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: rgb(228, 228, 228);
+  border-radius: 10px;
+}
+
+@media (max-width: 480px) {
+  .toggle-button {
+    display: flex;
+  }
+  .nav-links {
+    width: 100%;
+    display: none;
+  }
+  .nav-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  ul {
+    flex-direction: column;
+    width: 100%;
+  }
+  li {
+    text-align: center;
+    padding: 1.5rem;
+  }
+  .nav-links.active {
+    display: flex;
+  }
 }
