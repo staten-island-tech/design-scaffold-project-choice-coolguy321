@@ -8,7 +8,7 @@ body,
 
 .navbar {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   min-height: 8vh;
   background-color: rgb(138, 139, 138);
@@ -20,6 +20,7 @@ body,
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 1.5rem;
+  padding-left: 2rem;
 }
 
 .navlinks {
@@ -38,7 +39,7 @@ body,
 }
 
 .navlinks a:hover {
-  color: rgb(46, 46, 46);
+  color: rgb(66, 65, 82);
 }
 
 .toggle-button {
@@ -69,6 +70,10 @@ body,
   }
   .navbar {
     flex-direction: column;
+    display: flex;
+    align-items: center;
+    min-height: 8vh;
+    padding-top: 1.5rem;
   }
   ul {
     width: 100%;
@@ -78,35 +83,37 @@ body,
     text-align: center;
   }
   li a {
-    padding: 1rem;
+    padding: 2.5rem;
   }
   .navlinks.active {
     display: flex;
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 360px) {
   .navbar {
-
+  align-items: flex-start;
+  }
+}
+  
+@media (max-width: 290px) {
+  .title-name {
+    display: none;
   }
 }
 
 .section-container {
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
 }
 
 .card {
   text-align: center;
-  padding: 4rem;
+  align-items: center;
+  padding: 2rem;
   box-shadow: 0 2rem 2rem 0 rgba(0, 0, 0, 0.7);
   border-radius: 2.2rem;
-  height: 41rem;
-  margin: 2.5rem 2.5rem;
-  padding-left: 3rem;
-  padding-right: 3rem;
-  flex: 0 1 22%;
+  height: 38rem;
+  margin: 3rem;
 }
 
 img {
@@ -114,4 +121,17 @@ img {
   padding: 1.2rem;
   height: 30rem;
   width: 25rem;
+align-content: center;
+}
+
+a {
+  font-family: 'Nanum Gothic', sans-serif;
+  text-transform: uppercase;
+}
+h3 {
+  font-family: 'Nanum Gothic', sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: rgb(64, 111, 112);
+  font-size: 1.75rem;
 }
