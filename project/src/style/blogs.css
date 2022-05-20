@@ -104,24 +104,27 @@ body,
 
 .section-container {
   display: flex;
+  width: 100%;
+  justify-content: center;
+  background-color: rgb(57, 57, 57);
 }
 
 .card {
   text-align: center;
   align-items: center;
-  padding: 2rem;
+  padding: 3rem;
   box-shadow: 0 2rem 2rem 0 rgba(0, 0, 0, 0.7);
   border-radius: 2.2rem;
   height: 38rem;
-  margin: 3rem;
+  margin: 2rem;
+  background-color: rgb(57, 68, 79);
 }
 
 img {
   border-radius: 2.2rem;
   padding: 1.2rem;
-  height: 30rem;
-  width: 25rem;
-align-content: center;
+  height: 28rem;
+  width: 23rem;
 }
 
 a {
@@ -132,6 +135,23 @@ h3 {
   font-family: 'Nanum Gothic', sans-serif;
   text-transform: uppercase;
   font-weight: bold;
-  color: rgb(64, 111, 112);
+  color: rgb(168, 175, 177);
   font-size: 1.75rem;
+}
+
+.card-header {
+  padding: 0.5rem;
+}
+
+a {
+  color: rgb(202, 202, 202);
+}
+
+a:hover {
+  color: rgb(157, 157, 159);
+}
+
+.article-author {
+  color: rgb(97, 108, 112);
+  padding: 0.5rem;
 }

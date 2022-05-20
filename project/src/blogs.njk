@@ -14,9 +14,9 @@
             {%- for post in collections.post -%}
                 <article class="article-container">
                     <div class="card">
-
-                        <h3 class="article-title">{{post.data.title}}</h3>
-                        <h4 class="article-author">by: {{post.data.author}}</h4>
+                        <div class="card-header">
+                            <h3 class="article-title">{{post.data.title}}</h3>
+                        </div>
                         <img src= "{{ post.data.image }}" alt="" class="img-preview">
                         <a class="article-link" href="{{ post.url }}">{{post.data.url}}</a>
                         </div>                
