@@ -9,21 +9,19 @@
 </head>
 <body>
     {% include 'nav.njk' %}
-    <section class="section-container">
+    <div class="section-container">
         <ul class="articles">
             {%- for post in collections.post -%}
-                <article class="article-container">
                     <div class="card">
                         <div class="card-header">
                             <h3 class="article-title">{{post.data.title}}</h3>
                         </div>
                         <img src= "{{ post.data.image }}" alt="" class="img-preview">
                         <a class="article-link" href="{{ post.url }}">{{post.data.url}}</a>
-                        </div>                
-                </article>
+                    </div>                
             {%- endfor -%}
         </ul>
-    </section>
+    </div>
 <script src="../js/app.js"> rel=""</script>
 </body>
 </html>

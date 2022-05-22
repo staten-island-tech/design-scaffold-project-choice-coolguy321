@@ -104,19 +104,18 @@ body,
 
 .section-container {
   display: flex;
-  width: 100%;
+  flex-wrap: wrap;
   justify-content: center;
   background-color: rgb(57, 57, 57);
 }
 
 .card {
   text-align: center;
-  align-items: center;
+  margin: 2rem;
   padding: 3rem;
   box-shadow: 0 2rem 2rem 0 rgba(0, 0, 0, 0.7);
   border-radius: 2.2rem;
   height: 38rem;
-  margin: 2rem;
   background-color: rgb(57, 68, 79);
 }
 
@@ -125,12 +124,9 @@ img {
   padding: 1.2rem;
   height: 28rem;
   width: 23rem;
+  display: inline-block;
 }
 
-a {
-  font-family: 'Nanum Gothic', sans-serif;
-  text-transform: uppercase;
-}
 h3 {
   font-family: 'Nanum Gothic', sans-serif;
   text-transform: uppercase;
@@ -145,6 +141,11 @@ h3 {
 
 a {
   color: rgb(202, 202, 202);
+justify-content: center;
+  display: inline-block;
+  font-size: 1.25rem;
+  font-family: 'Nanum Gothic', sans-serif;
+  text-transform: uppercase;
 }
 
 a:hover {
