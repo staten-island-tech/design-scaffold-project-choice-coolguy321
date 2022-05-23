@@ -1,40 +1,112 @@
-html, body, * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+html,
+body,
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 8vh;
+  background-color: rgb(138, 139, 138);
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+.title-name {
+  color: rgb(228, 228, 228);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1.5rem;
+  padding-left: 2rem;
+}
+
+.navlinks {
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+  text-transform: uppercase;
+  list-style-type: none;
+}
+
+.navlinks a {
+  color: rgb(228, 228, 228);
+  text-decoration: none;
+  letter-spacing: 1.5px;
+  display: block;
+}
+
+.navlinks a:hover {
+  color: rgb(66, 65, 82);
+}
+
+.toggle-button {
+  position: absolute;
+  top: 1.65rem;
+  right: 1.25rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+@media (max-width: 460px) {
+  .toggle-button {
+    display: flex;
+  }
+  .navlinks {
+    display: none;
+    width: 100%;
+  }
+  .navbar {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    min-height: 8vh;
+    padding-top: 1.5rem;
+  }
+  ul {
+    width: 100%;
+    flex-direction: column;
+  }
+  li {
     text-align: center;
+  }
+  li a {
+    padding: 2.5rem;
+  }
+  .navlinks.active {
+    display: flex;
+  }
 }
 
-h2 {
-    font-size: 2rem;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #2E402D;
-}
-
-li {
-    float: left;
+@media (max-width: 360px) {
+  .navbar {
+  align-items: flex-start;
+  }
 }
   
-li a {
-    background-color: #2E402D;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 2rem 3.5rem;
-    text-decoration: none;
-}
-
-li a:hover {
-    background-color: rgb(5, 29, 17);
+@media (max-width: 290px) {
+  .title-name {
+    display: none;
+  }
 }
 
 a {
-    font-size: 2rem;
-}
-
+    color: rgb(202, 202, 202);
+    font-size: 1.25rem;
+    font-family: 'Nanum Gothic', sans-serif;
+    text-transform: uppercase;
+    display: block;
+    margin: 0 auto;
+  }

@@ -102,33 +102,35 @@ body,
   }
 }
 
-.section-container {
+.articles {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   background-color: rgb(57, 57, 57);
 }
 
 .card {
   text-align: center;
-  margin: 2rem;
+  flex: 1 2 23%;
+  margin: 3rem;
   padding: 3rem;
   box-shadow: 0 2rem 2rem 0 rgba(0, 0, 0, 0.7);
   border-radius: 2.2rem;
-  height: 38rem;
+  height: 36rem;
   background-color: rgb(57, 68, 79);
 }
 
 img {
   border-radius: 2.2rem;
   padding: 1.2rem;
-  height: 28rem;
+  height: 23rem;
   width: 23rem;
   display: inline-block;
 }
 
 h3 {
   font-family: 'Nanum Gothic', sans-serif;
+  text-shadow: 3px 3px #1e2933;
   text-transform: uppercase;
   font-weight: bold;
   color: rgb(168, 175, 177);
@@ -141,18 +143,21 @@ h3 {
 
 a {
   color: rgb(202, 202, 202);
-justify-content: center;
-  display: inline-block;
   font-size: 1.25rem;
   font-family: 'Nanum Gothic', sans-serif;
   text-transform: uppercase;
+  display: block;
+  margin: 0 auto;
 }
 
 a:hover {
   color: rgb(157, 157, 159);
 }
 
-.article-author {
-  color: rgb(97, 108, 112);
-  padding: 0.5rem;
+.article-link:visited {
+  color: cadetblue;
+}
+
+.article-link {
+  padding: 1.75rem;
 }
