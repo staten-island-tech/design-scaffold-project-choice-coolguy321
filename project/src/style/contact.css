@@ -4,6 +4,8 @@ body,
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .navbar {
@@ -60,7 +62,7 @@ body,
   border-radius: 10px;
 }
 
-@media (max-width: 460px) {
+@media (max-width: 650px) {
   .toggle-button {
     display: flex;
   }

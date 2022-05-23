@@ -8,12 +8,18 @@ body,
   overflow-x: hidden;
 }
 
+:root {
+  --mainGrey: rgb(138, 139, 138);
+  --darkGrey: rgb(57, 57, 57);
+  --cardBlue: rgb(57, 68, 79);
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   min-height: 8vh;
-  background-color: rgb(138, 139, 138);
+  background-color: var(--mainGrey);
   font-family: "Nanum Gothic", sans-serif;
 }
 
@@ -108,7 +114,7 @@ body,
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: rgb(57, 57, 57);
+  background-color: var(--darkGrey);
 }
 
 .card {
@@ -121,7 +127,7 @@ body,
   box-shadow: 0 2rem 2rem 0 rgba(0, 0, 0, 0.7);
   border-radius: 2.2rem;
   height: 34rem;
-  background-color: rgb(57, 68, 79);
+  background-color: var(--cardBlue);
 }
 
 img {
