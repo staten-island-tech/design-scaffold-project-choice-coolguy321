@@ -9,9 +9,10 @@ body,
 }
 
 :root {
-  --mainGrey: rgb(138, 139, 138);
-  --darkGrey: rgb(57, 57, 57);
-  --cardBlue: rgb(57, 68, 79);
+  --nav-blue: rgb(138, 139, 138);
+  --bg-blue: rgb(57, 57, 57);
+  --card-blue: rgb(57, 68, 79);
+  --text-blue: rgb(228, 228, 228);
 }
 
 .navbar {
@@ -19,12 +20,12 @@ body,
   justify-content: space-between;
   align-items: center;
   min-height: 8vh;
-  background-color: var(--mainGrey);
+  background-color: var(--nav-blue);
   font-family: "Nanum Gothic", sans-serif;
 }
 
 .title-name {
-  color: rgb(228, 228, 228);
+  color: var(--text-blue);
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 1.5rem;
@@ -40,7 +41,7 @@ body,
 }
 
 .navlinks a {
-  color: rgb(228, 228, 228);
+  color: var(--text-blue);
   text-decoration: none;
   letter-spacing: 1.5px;
   display: block;
@@ -114,7 +115,7 @@ body,
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: var(--darkGrey);
+  background-color: var(--bg-blue);
 }
 
 .card {
@@ -127,7 +128,7 @@ body,
   box-shadow: 0 2rem 2rem 0 rgba(0, 0, 0, 0.7);
   border-radius: 2.2rem;
   height: 34rem;
-  background-color: var(--cardBlue);
+  background-color: var(--card-blue);
 }
 
 img {
