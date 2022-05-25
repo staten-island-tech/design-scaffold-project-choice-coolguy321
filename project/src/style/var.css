@@ -8,19 +8,31 @@ body,
   overflow-x: hidden;
 }
 
+
 :root {
+/* basics */
+  --black: black;
+  --white: white;
+/* theme bloo */
   --nav-blue: rgb(138, 139, 138);
   --bg-blue: rgb(57, 57, 57);
   --card-blue: rgb(57, 68, 79);
   --text-blue: rgb(228, 228, 228);
+/* theme griin */
+  --nav-green: rgb(159, 184, 165);
+  --bg-green: rgb(43, 51, 43);
+  --card-green: rgb(73, 73, 73);
+  --text-green: rgb(228, 228, 228);
 }
 
+
+
 .navbar {
+  background-color: var(--nav-blue);
   display: flex;
   justify-content: space-between;
   align-items: center;
   min-height: 8vh;
-  background-color: var(--nav-blue);
   font-family: "Nanum Gothic", sans-serif;
 }
 
@@ -65,50 +77,8 @@ body,
 .toggle-button .bar {
   height: 3px;
   width: 100%;
-  background-color: white;
+  background-color: var(--white);
   border-radius: 10px;
-}
-
-@media (max-width: 650px) {
-  .toggle-button {
-    display: flex;
-  }
-  .navlinks {
-    display: none;
-    width: 100%;
-  }
-  .navbar {
-    flex-direction: column;
-    display: flex;
-    align-items: center;
-    min-height: 8vh;
-    padding-top: 1.5rem;
-  }
-  ul {
-    width: 100%;
-    flex-direction: column;
-  }
-  li {
-    text-align: center;
-  }
-  li a {
-    padding: 2.5rem;
-  }
-  .navlinks.active {
-    display: flex;
-  }
-}
-
-@media (max-width: 360px) {
-  .navbar {
-  align-items: flex-start;
-  }
-}
-  
-@media (max-width: 290px) {
-  .title-name {
-    display: none;
-  }
 }
 
 .articles {
@@ -170,4 +140,46 @@ a:hover {
 
 .article-link {
   padding: 1.75rem;
+}
+
+@media (max-width: 650px) {
+  .toggle-button {
+    display: flex;
+  }
+  .navlinks {
+    display: none;
+    width: 100%;
+  }
+  .navbar {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    min-height: 8vh;
+    padding-top: 1.5rem;
+  }
+  ul {
+    width: 100%;
+    flex-direction: column;
+  }
+  li {
+    text-align: center;
+  }
+  li a {
+    padding: 2.5rem;
+  }
+  .navlinks.active {
+    display: flex;
+  }
+}
+
+@media (max-width: 360px) {
+  .navbar {
+  align-items: flex-start;
+  }
+}
+  
+@media (max-width: 290px) {
+  .title-name {
+    display: none;
+  }
 }
