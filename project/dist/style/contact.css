@@ -8,12 +8,65 @@ body,
   overflow-x: hidden;
 }
 
+:root {
+  /* basics */
+    --black: black;
+    --white: white;
+  /* theme bloo */
+    --nav-blue: rgb(138, 139, 138);
+    --bg-blue: rgb(57, 57, 57);
+    --card-blue: rgb(57, 68, 79);
+    --text-blue: rgb(228, 228, 228);
+  /* theme griin */
+    --nav-green: rgb(124, 151, 131);
+    --bg-green: rgb(43, 51, 43);
+    --card-green: rgb(106, 106, 106);
+    --text-green: rgb(228, 228, 228);
+  
+    --primary: var(--nav-blue);
+    --secondary: var(--bg-blue);
+    --third: var(--card-blue);
+  }
+  .blue-theme {
+    /* basics */
+    --black: black;
+    --white: white;
+    /* theme bloo */
+  --primary: var(--nav-blue);
+  --secondary: var(--bg-blue);
+  --third: var(--card-blue);
+  }
+  .green-theme {
+    /* basics */
+    --black: black;
+    --white: white;
+  /* theme griin */
+  --primary: var(--nav-green);
+  --secondary: var(--bg-green);
+  --third: var(--card-green);
+  }
+
+  .toggleTheme {
+    display: flex;
+    padding: 0.5rem;
+    border-radius:0.5rem; 
+    background-color: rgb(114, 87, 224);
+    margin-right: 2rem;
+  }
+  
+  .toggleTheme:hover {
+      color: #111;
+      background: #b868e7;
+      box-shadow: 0 0 50px #612a8d;
+  }
+    
+
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   min-height: 8vh;
-  background-color: rgb(138, 139, 138);
+  background-color: var(--primary);
   font-family: "Nanum Gothic", sans-serif;
 }
 

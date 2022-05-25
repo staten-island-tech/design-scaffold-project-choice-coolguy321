@@ -18,15 +18,18 @@ body,
   --bg-blue: rgb(57, 57, 57);
   --card-blue: rgb(57, 68, 79);
   --text-blue: rgb(228, 228, 228);
+  --h3-blue:  rgb(168, 175, 177);
 /* theme griin */
-  --nav-green: rgb(159, 184, 165);
+  --nav-green: rgb(124, 151, 131);
   --bg-green: rgb(43, 51, 43);
-  --card-green: rgb(73, 73, 73);
+  --card-green: rgb(94, 91, 91);
   --text-green: rgb(228, 228, 228);
+  --h3-green: rgb(112, 156, 112);
 
   --primary: var(--nav-blue);
   --secondary: var(--bg-blue);
-
+  --third: var(--card-blue);
+  --fourth: var(--text-blue);
 }
 .blue-theme {
   /* basics */
@@ -35,6 +38,8 @@ body,
   /* theme bloo */
 --primary: var(--nav-blue);
 --secondary: var(--bg-blue);
+--third: var(--card-blue);
+--fourth: var(--h3-blue);
 }
 .green-theme {
   /* basics */
@@ -42,7 +47,9 @@ body,
   --white: white;
 /* theme griin */
 --primary: var(--nav-green);
---secondary: var(--bg-green)
+--secondary: var(--bg-green);
+--third: var(--card-green);
+--fourth: var(--h3-green);
 }
 
 .navbar {
@@ -81,6 +88,20 @@ body,
   color: rgb(66, 65, 82);
 }
 
+.toggleTheme {
+  display: flex;
+  padding: 0.5rem;
+  border-radius:0.5rem; 
+  background-color: rgb(114, 87, 224);
+  margin-right: 2rem;
+}
+
+.toggleTheme:hover {
+    color: #111;
+    background: #b868e7;
+    box-shadow: 0 0 50px #612a8d;
+}
+
 .toggle-button {
   position: absolute;
   top: 1.65rem;
@@ -116,7 +137,7 @@ body,
   box-shadow: 0 2rem 2rem 0 rgba(0, 0, 0, 0.7);
   border-radius: 2.2rem;
   height: 34rem;
-  background-color: var(--card-blue);
+  background-color: var(--third);
 }
 
 img {
@@ -131,7 +152,7 @@ h3 {
   text-shadow: 3px 3px #1e2933;
   text-transform: uppercase;
   font-weight: bold;
-  color: rgb(168, 175, 177);
+  color: var(--fourth);
   font-size: 1.75rem;
 }
 
@@ -192,6 +213,9 @@ a:hover {
   }
   .navlinks.active {
     display: flex;
+  }
+  .toggleTheme {
+    display: none;
   }
 }
 
