@@ -23,32 +23,30 @@ body,
   --bg-green: rgb(43, 51, 43);
   --card-green: rgb(73, 73, 73);
   --text-green: rgb(228, 228, 228);
+
+  --primary: var(--nav-blue);
+  --secondary: var(--bg-blue);
+
 }
 .blue-theme {
   /* basics */
   --black: black;
   --white: white;
   /* theme bloo */
-  --nav-blue: rgb(138, 139, 138);
-  --bg-blue: rgb(57, 57, 57);
-  --card-blue: rgb(57, 68, 79);
-  --text-blue: rgb(228, 228, 228);
+--primary: var(--nav-blue);
+--secondary: var(--bg-blue);
 }
 .green-theme {
   /* basics */
   --black: black;
   --white: white;
 /* theme griin */
-  --nav-green: rgb(159, 184, 165);
-  --bg-green: rgb(43, 51, 43);
-  --card-green: rgb(73, 73, 73);
-  --text-green: rgb(228, 228, 228);
+--primary: var(--nav-green);
+--secondary: var(--bg-green)
 }
 
-
-
 .navbar {
-  background-color: var(--nav-blue);
+  background-color: var(--primary);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -105,7 +103,7 @@ body,
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: var(--bg-blue);
+  background-color: var(--secondary);
 }
 
 .card {

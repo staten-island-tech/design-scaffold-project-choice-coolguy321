@@ -8,16 +8,20 @@ toggleButton.addEventListener("click", () => {
 // light = blue
 // dark = green
 
+// function switchTheme() {
+//   document.body.classList.toggle("green-theme");
+// }
+
 const selector = {
-  mode: document.querySelector("mode"),
+  toggletheme: document.querySelector(".toggleTheme"),
 };
 
-selector.mode.addEventListener("click", function () {
-  if (document.body.classList.contains("blue-theme")) {
-    document.body.classList.add("green-theme");
-    document.body.classList.remove("blue-theme");
-  } else {
+selector.toggletheme.addEventListener("click", function () {
+  if (document.body.classList.contains("green-theme")) {
     document.body.classList.add("blue-theme");
     document.body.classList.remove("green-theme");
+  } else {
+    document.body.classList.add("green-theme");
+    document.body.classList.remove("blue-theme");
   }
 });
