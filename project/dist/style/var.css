@@ -230,3 +230,7 @@ a:hover {
     display: none;
   }
 }
+
+p {
+  font-size: 2rem;
+}
