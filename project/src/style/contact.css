@@ -169,3 +169,10 @@ a {
     display: block;
     margin: 0 auto;
   }
+
+  h2 {
+    text-align: center;
+    margin-top: 2rem;
+    font-family: "Nanum Gothic", sans-serif;
+    font-style: italic;
+  }
