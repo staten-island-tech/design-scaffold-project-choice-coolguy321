@@ -143,7 +143,11 @@ body,
   .navlinks.active {
     display: flex;
   }
+  .toggleTheme {
+    display: none;
+  }
 }
+
 
 @media (max-width: 360px) {
   .navbar {
